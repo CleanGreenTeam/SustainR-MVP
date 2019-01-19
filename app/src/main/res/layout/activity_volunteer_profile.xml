@@ -61,48 +61,70 @@
 
     </EditText>
 
-    <ImageButton
-        android:id="@+id/points"
-        android:layout_width="91dp"
-        android:layout_height="71dp"
+    <EditText
+        android:id="@+id/pointsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/network"
-        app:layout_constraintStart_toEndOf="@+id/imageButton"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars">
-
-    </ImageButton>
-
-    <ImageButton
-        android:id="@+id/network"
-        android:layout_width="91dp"
-        android:layout_height="71dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Points"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars">
-
-    </ImageButton>
-
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="91dp"
-        android:layout_height="71dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.115"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars">
+        app:layout_constraintVertical_bias="0.438">
 
-    </ImageButton>
+    </EditText>
+
+    <EditText
+        android:id="@+id/num"
+        android:layout_width="81dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.547">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/discount1"
+        android:layout_width="339dp"
+        android:layout_height="48dp"
+        android:text="15% Off | Sandwich at High St. Deli"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="491dp" >
+    </Button>
+
+    <Button
+        android:id="@+id/discount2"
+        android:layout_width="339dp"
+        android:layout_height="48dp"
+        android:text="10% Off | Coffee at Kruezburg"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="587dp" >
+    </Button>
+
+    <Button
+        android:id="@+id/discount3"
+        android:layout_width="339dp"
+        android:layout_height="48dp"
+        android:text="5% Off | Scout Coffee Pastry"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="539dp" >
+    </Button>
 
 </android.support.constraint.ConstraintLayout>
