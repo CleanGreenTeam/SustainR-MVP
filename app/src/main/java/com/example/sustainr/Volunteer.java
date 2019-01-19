@@ -12,10 +12,11 @@ public class Volunteer {
     private int age;
     private int points;
     private String location;
+    private List<String> interests;
 
 
 
-    public Volunteer(String name, String email, String password, String id, int age, int points, String location){
+    public Volunteer(String name, String email, String password, String id, int age, int points, String location, List<String> interests){
         this.name = name;
         this.email = email;
         this.password = password;
@@ -23,6 +24,7 @@ public class Volunteer {
         this.points = points;
         this.age = age;
         this.location = location;
+        this.interests = interests;
     }
 
 
