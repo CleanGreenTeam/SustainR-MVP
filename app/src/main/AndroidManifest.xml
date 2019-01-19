@@ -18,7 +18,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".VolunteerReg"></activity>
+        <activity android:name=".network"></activity>
+        <activity android:name=".NonProfitLogin" />
+        <activity android:name=".VolunteerReg" />
         <activity android:name=".CoordinatorReg" />
         <activity android:name=".SignUpActivity" />
         <!--
