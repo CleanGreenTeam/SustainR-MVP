@@ -8,14 +8,15 @@ public class Event { private LatLng latLng;
     private String description;
     private String ownerID;
     private List<String> participants = new ArrayList<String>();
+    private List<String> requirements = new ArrayList<>();   //added
 
-
-    public Event(LatLng latLng, String title, String description, String ownerID){
+    public Event(LatLng latLng, String title, String description, String ownerID, List<String> participants, List<String> requirements){
         this.latLng = latLng;
         this.title = title;
         this.description = title;
         this.ownerID = ownerID;
-
+        this.participants = participants;
+        this.requirements = requirements;
     }
 
     public LatLng getLatLng() {
