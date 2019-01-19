@@ -8,12 +8,46 @@ public class Volunteer {
     String name;
     String email;
     String password;
-    int badges;
+    String id;
+    private int age;
+    private int points;
+    private String location;
 
-    public Volunteer(String name, String email, String password){
+
+
+    public Volunteer(String name, String email, String password, String id, int age, int points, String location){
         this.name = name;
         this.email = email;
         this.password = password;
+        this.id = id;
+        this.points = points;
+        this.age = age;
+        this.location = location;
+    }
+
+
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getName() {
@@ -40,14 +74,14 @@ public class Volunteer {
         this.password = password;
     }
 
-    public int getBadges() {
-        return badges;
+    public int getPoints() {
+        return points;
     }
 
-    public void setBadges(int badges) {
-        this.badges = badges;
+    public void setPoints(int points) {
+        this.points = points;
     }
     public void giveReward(int amount){
-        this.badges+=amount;
+        this.points+=amount;
     }
 }
