@@ -18,8 +18,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+<<<<<<< HEAD
         <activity android:name=".eventView"></activity>
         <activity android:name=".selectInterests" />
+=======
+        <activity android:name=".Interests"></activity>
+>>>>>>> 2681f19325a855b2995d93c1363e479c7466c054
         <activity android:name=".network" />
         <activity android:name=".NonProfitLogin" />
         <activity android:name=".VolunteerReg" />
