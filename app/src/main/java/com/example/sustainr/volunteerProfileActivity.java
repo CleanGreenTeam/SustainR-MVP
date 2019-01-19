@@ -17,6 +17,7 @@ public class volunteerProfileActivity extends AppCompatActivity {
     DatabaseReference databaseReference;
     TextView name;
     TextView location;
+    TextView points;
     FirebaseAuth mAuth;
 
     @Override
@@ -27,6 +28,7 @@ public class volunteerProfileActivity extends AppCompatActivity {
         String id =mAuth.getCurrentUser().getUid().toString();
         name = findViewById(R.id.name);
         location = findViewById(R.id.location);
+        points = findViewByID(R.id.points);
 
         databaseReference = FirebaseDatabase.getInstance().getReference("Users");
         databaseReference.addValueEventListener(new ValueEventListener() {
@@ -37,6 +39,7 @@ public class volunteerProfileActivity extends AppCompatActivity {
                     if (usersnap.getId().equals(mAuth.getCurrentUser().getUid().toString())) {
                         name.setText(usersnap.getName());
                         location.setText(usersnap.getLocation());
+                        points.setText(usersnap.getPoints());
                     }
                 }
             }
