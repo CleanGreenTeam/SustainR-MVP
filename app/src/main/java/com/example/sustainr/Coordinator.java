@@ -1,16 +1,14 @@
 package com.example.sustainr;
 
-import android.view.ViewOutlineProvider;
-
 import java.util.List;
 
-public class Volunteer {
+public class Coordinator {
     String name;
     String email;
     String password;
-    int badges;
+    List<String> eventIds;
 
-    public Volunteer(String name, String email, String password){
+    public Coordinator(String name, String email, String password) {
         this.name = name;
         this.email = email;
         this.password = password;
@@ -40,14 +38,11 @@ public class Volunteer {
         this.password = password;
     }
 
-    public int getBadges() {
-        return badges;
+    public List<String> getEventIds() {
+        return eventIds;
     }
 
-    public void setBadges(int badges) {
-        this.badges = badges;
-    }
-    public void giveReward(int amount){
-        this.badges+=amount;
+    public void addEvent(String event){
+        this.eventIds.add(event);
     }
 }

@@ -31,7 +31,7 @@ public class SignUpActivity extends AppCompatActivity {
         coordinatorReg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent1 = new Intent(this, CoordinatorRed.class);
+                Intent intent1 = new Intent(SignUpActivity.this, CoordinatorReg.class);
                 startActivity(intent1);
                 finish();
             }
